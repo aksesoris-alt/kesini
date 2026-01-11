@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Loading...</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script>
-  // 1) Buka Shopee dulu
-  window.location.replace("https://s.shopee.co.id/4VWRetU0BM?share_channel_code=2");
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Loading...</title>
+  <script>
+    const SHOP = "https://s.shopee.co.id/4VWRetU0BM?share_channel_code=2";
+    const TG   = "https://t.me/MEDIARAREE_INDBOT?start=get_LTEwMDIwMjc5ODI3OTZfNjU5";
 
-  // 2) Setelah 1.8 detik lanjut ke Telegram
-  setTimeout(function(){
-    window.location.replace("https://t.me/MEDIARAREE_INDBOT?start=get_LTEwMDIwMjc5ODI3OTZfNjU5");
-  }, 1800);
-</script>
+    // 1) Buka Shopee di tab baru (hasil klik user)
+    window.open(SHOP, "_blank");
+
+    // 2) Tab ini lanjut ke Telegram
+    setTimeout(() => {
+      window.location.href = TG;
+    }, 600);
+  </script>
 </head>
 <body style="font-family:sans-serif;text-align:center;margin-top:40px;">
-  Mohon tunggu sebentar...
+  Mengarahkan...
 </body>
 </html>
